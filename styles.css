@@ -651,6 +651,26 @@ footer > p {
   background-color: var(--background-color);
 }
 
+.github-link {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+
+  border-radius: 7px;
+  font-size: small;
+  font-weight: bold;
+
+  padding: 7px;
+
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+}
+
+.github-link:hover {
+  background-color: var(--fiveth-color);
+  color: var(--third-color);
+}
+
 @media screen and (max-width: 810px) {
   nav > * {
     display: none;
