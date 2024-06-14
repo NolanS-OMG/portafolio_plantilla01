@@ -751,4 +751,8 @@ footer > p {
     padding: 20px;
   }
 
+  .github-link {
+    display: none;
+  }
+
 }
