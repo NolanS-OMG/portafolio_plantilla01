@@ -1,0 +1,160 @@
+:root {
+  --background-color: rgb(20, 20, 20);
+  --secondary-color: #565554ff;
+  --third-color: rgb(161, 154, 147);
+  --fourth-color: #ffede1ff;
+  --fiveth-color: #f9fbf2ff;
+
+  --background-color-70: rgba(20,20,20, 0.7);
+  --secondary-color-70: rgba(86, 85, 84, 0.7);
+  --third-color-70: rgba(161, 154, 147, 0.7);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--fourth-color);
+}
+
+p {
+  color: var(--third-color);
+}
+
+p > strong {
+  color: var(--fourth-color);
+}
+
+nav:hover > ul {
+  background: var(--background-color-70);
+}
+
+nav > ul > li > a {
+  color: var(--third-color);
+}
+nav > ul > li > a:hover {
+  color: var(--fourth-color);
+}
+
+.presentation {
+  background-color: var(--secondary-color-70);
+}
+
+.animation-expand {
+  border: solid 0px var(--fourth-color);
+}
+
+@keyframes expand {
+  0% {
+    width: 0;
+    height: 0;
+    border: solid 1px transparent;
+  }
+  20% {
+    width: 0;
+    height: 0;
+    border: solid 1px var(--fourth-color);
+  }
+  40% {
+    width: 100%;
+    height: 100%;
+    border: solid 1px var(--fourth-color);
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border: solid 1px transparent;
+  }
+}
+
+.img-container > .img > div {
+  background-color: var(--third-color-70);
+}
+
+.img-container > .img > div > a {
+  color: var(--fiveth-color);
+  background-color: var(--background-color);
+}
+
+.contact-logos {
+  border-top: solid 1px var(--third-color);
+}
+
+.contact-logos > .logo-svg > img {
+  filter: invert(0.45);
+}
+
+.contact-logos > .logo-svg:hover > img {
+  filter: invert(0.9);
+}
+
+.projects {
+  background-color: var(--secondary-color-70);
+}
+
+.project-container {
+  background-color: var(--background-color);
+}
+
+.project-container > button {
+  background-color: var(--secondary-color);
+  color: var(--fiveth-color);
+}
+
+.experience-container {
+  background-color: var(--secondary-color-70);
+}
+
+footer {
+  background-color: var(--background-color);
+  border-top: solid 1px var(--third-color);
+}
+
+.border-right {
+  border-right: solid 1px var(--third-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.cancel-pop-up > img {
+  filter: invert(0.25) sepia(5) saturate(15) hue-rotate(-30deg);
+}
+
+.link {
+  background-color: var(--fourth-color);
+  color: var(--secondary-color);
+}
+.link:hover {
+  color: var(--third-color);
+}
+
+.pop-up {
+  background: var(--secondary-color);
+}
+
+.info-pop-up {
+  border-right: solid 1px var(--third-color);
+}
+
+.hasYoutubeVideo > div {
+  background-color: var(--background-color);
+}
+
+@media screen and (max-width: 810px) {
+  .info-pop-up {
+    width: 100%;
+    padding-right: none;
+    border-right: none;
+    padding-bottom: 15px;
+    border-bottom: solid 1px var(--third-color);
+  }
+
+  .img-pop-up {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    padding-left: none;
+    padding-bottom: 15px;
+  }
+
+}
